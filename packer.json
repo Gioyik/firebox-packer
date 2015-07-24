@@ -16,6 +16,7 @@
                 "scripts/vagrant.sh",
                 "scripts/reduce.sh",
                 "scripts/dep.sh",
+                "scripts/helper.sh",
                 "scripts/cleanup.sh",
                 "scripts/zerodisk.sh"
             ],
@@ -73,6 +74,7 @@
     "post-processors": [
         [{
             "type": "vagrant",
+            "compression_level": 9,
             "keep_input_artifact": false
         },
         {
@@ -82,7 +84,7 @@
             "artifact_type": "vagrant.box",
             "metadata": {
                 "provider": "virtualbox",
-                "version": "0.0.1"
+                "version": "0.0.2"
             }
         }]
     ]
